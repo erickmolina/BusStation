@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bus Station</string>
+    <string name="item_hibrid">Hibrido</string>
+    <string name="item_satelite">Satellite</string>
+    <string name="item_normal">Normal</string>
+    <string name="item_terran">Terrestre</string>
+    <string name="str_ingr_ruta">Ingrese una ruta</string>
+    <string name="sin_conexi_n">Sin conexión</string>
+    <string name="intentar_nuevamente">Intentar nuevamente</string>
+    <string name="nombre_ruta">Ruta</string>
+    <string name="tarifa">Tarifa</string>
+    <string name="str_mensaje"> Bienvenido a Bus Station para seleccionar una ruta, ingrese una o varias letras para obtener resultados </string>
+
+</resources>
