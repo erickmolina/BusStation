@@ -1315,7 +1315,7 @@ containing a value of this type.
         public static final int icon=0x7f06002d;
         public static final int ifRoom=0x7f06000e;
         public static final int image=0x7f06002a;
-        public static final int imageView1=0x7f060043;
+        public static final int imageView1=0x7f060042;
         public static final int listMode=0x7f060005;
         public static final int list_item=0x7f06002c;
         public static final int middle=0x7f060015;
@@ -1348,7 +1348,7 @@ containing a value of this type.
         public static final int text_tarifa=0x7f060045;
         public static final int title=0x7f06002e;
         public static final int top_action_bar=0x7f060023;
-        public static final int txt_welcom=0x7f060042;
+        public static final int txt_welcom=0x7f060043;
         public static final int txtname_ruta=0x7f060044;
         public static final int up=0x7f060024;
         public static final int useLogo=0x7f060007;
@@ -1591,6 +1591,7 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0b008c;
+        public static final int EstiloTexto=0x7f0b008d;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;

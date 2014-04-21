@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -37,6 +38,21 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		
+		  // Font path
+        
+ 
+        // text view label
+        TextView txtGhost = (TextView) findViewById(R.id.txt_welcom);
+ 
+        // Loading Font Face
+        Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/Lato-Bol.ttf");
+ 
+        // Applying font
+        txtGhost.setTypeface(tf);
+		
+		
 		_Task = new MyLongTask(this);
 		_TextListRutas = (AutoCompleteTextView) findViewById(R.id.autoCompleteRutas);
 		_TxtWelcome = (TextView) findViewById(R.id.txt_welcom);

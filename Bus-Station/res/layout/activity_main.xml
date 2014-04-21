@@ -3,6 +3,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#333333"
     tools:context="com.moviles.bus_station.MainActivity"
     tools:ignore="MergeRootFrame" >
 
@@ -16,20 +17,13 @@
         android:layout_marginTop="38dp"
         android:ems="10"
         android:hint="@string/str_ingr_ruta"
-        android:textColor="#000000"
+        android:textColor="#f59b26"
+        android:textColorHint="#fed31f"
+        android:textColorLink="#fed31f"
         android:visibility="visible" >
 
         <requestFocus />
     </AutoCompleteTextView>
-
-    <TextView
-        android:id="@+id/txt_welcom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/autoCompleteRutas"
-        android:layout_marginTop="30dp"
-        android:text="@string/str_mensaje"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageView
         android:id="@+id/imageView1"
@@ -39,5 +33,18 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:src="@drawable/andrmapalittle" />
+
+    <TextView
+        android:id="@+id/txt_welcom"
+        style="@style/EstiloTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteRutas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/str_mensaje"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
