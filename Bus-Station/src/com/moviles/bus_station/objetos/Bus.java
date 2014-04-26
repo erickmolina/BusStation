@@ -9,6 +9,7 @@ package com.moviles.bus_station.objetos;
 */
 public class Bus {
 	
+	private String _NombreRuta;
 	private String _Identificador;
 	private String _Latitud;
 	private String _Longitud;
@@ -23,6 +24,24 @@ public class Bus {
 		_Latitud= pLatitud;
 		_Longitud = pLongitud;
 		_Estado = pEstado;
+	}
+	
+	public Bus(String pNombreRuta, String pIdentificador,String pLatitud,String pLongitud, String pEstado){
+		_NombreRuta = pNombreRuta;
+		_Identificador = pIdentificador;
+		_Latitud= pLatitud;
+		_Longitud = pLongitud;
+		_Estado = pEstado;
+	}
+
+	
+	
+	public String get_NombreRuta() {
+		return _NombreRuta;
+	}
+
+	public void set_NombreRuta(String _NombreRuta) {
+		this._NombreRuta = _NombreRuta;
 	}
 
 	public String get_Identificador() {

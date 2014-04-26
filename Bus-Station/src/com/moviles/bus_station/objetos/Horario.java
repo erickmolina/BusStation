@@ -9,39 +9,51 @@ package com.moviles.bus_station.objetos;
 
 public class Horario {
 	
-	private String _Dias;
-	private String _Hora;
-	
+	private String _Dia;
+	private String _HoraInicio;
+	private String _HoraFinal;
+	private String _RangoSalida;
 	public Horario(){
 		
 	}
 	
-	public Horario(String pDias, String pHora){
-		_Dias = pDias;
-		_Hora = pHora;
+	public Horario(String pDia, String pHoraInicio, String pHoraFinal, String pRangoSalida){
+		_Dia = pDia;
+		_HoraInicio = pHoraInicio;
+		_HoraFinal = pHoraFinal;
+		_RangoSalida = pRangoSalida;
 	}
 
-	public String get_Dias() {
-		return _Dias;
+	public String get_Dia() {
+		return _Dia;
 	}
 
-	public void set_Dias(String _Dias) {
-		this._Dias = _Dias;
+	public void set_Dia(String _Dia) {
+		this._Dia = _Dia;
 	}
 
-	public String get_Hora() {
-		return _Hora;
+	public String get_HoraInicio() {
+		return _HoraInicio;
 	}
 
-	public void set_Hora(String _Hora) {
-		this._Hora = _Hora;
+	public void set_HoraInicio(String _HoraInicio) {
+		this._HoraInicio = _HoraInicio;
 	}
 
-	@Override
-	public String toString() {
-		return "Horario [ Dias= " + _Dias + " Hora= " + _Hora + " ]";
+	public String get_HoraFinal() {
+		return _HoraFinal;
+	}
+
+	public void set_HoraFinal(String _HoraFinal) {
+		this._HoraFinal = _HoraFinal;
+	}
+
+	public String get_RangoSalida() {
+		return _RangoSalida;
+	}
+
+	public void set_RangoSalida(String _RangoSalida) {
+		this._RangoSalida = _RangoSalida;
 	}
 	
-	
-
 }

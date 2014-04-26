@@ -3,6 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.moviles.bus_station.MainActivity" >
 
+    <!-- Search Widget-->
+    <item
+        android:id="@+id/autocomplete_textview"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/action_rutas"
+        android:actionLayout="@layout/auto_search"
+        android:showAsAction="always|collapseActionView"/>
+     
+    
+   <!-- Ver horarios-->
+    <item android:id="@+id/action_ver_horario"
+          android:icon="@drawable/ic_action_place"
+          android:title="@string/action_horarios"
+          android:showAsAction="always" />
+    
+     <!-- Ver Paradas-->
+    <item android:id="@+id/action_ver_paradas"
+          android:icon="@drawable/ic_action_direction"
+          android:title="@string/action_paradas"
+          android:showAsAction="never" />
+    
+    
+    <!-- Items para tipo de mapa -->
     <item
         android:id="@+id/action_normal"
         android:orderInCategory="100"

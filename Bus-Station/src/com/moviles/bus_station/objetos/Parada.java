@@ -12,6 +12,8 @@ public class Parada {
 	private String _Informacion;
 	private String _Latitud;
 	private String _Longitud;
+	private String _NombreRuta;
+	private String _Detalle;
 	
 	
 	public Parada(){
@@ -24,6 +26,30 @@ public class Parada {
 		_Longitud = pLongitud;
 	}
 	
+	public Parada(String pDetalle, String pNombreRuta, String pInformacion,String pLatitud,String pLongitud){
+		_NombreRuta = pNombreRuta;
+		_Detalle = pDetalle;
+		_Informacion = pInformacion;
+		_Latitud = pLatitud;
+		_Longitud = pLongitud;
+	}
+	
+	public String get_NombreRuta() {
+		return _NombreRuta;
+	}
+
+	public void set_NombreRuta(String _NombreRuta) {
+		this._NombreRuta = _NombreRuta;
+	}
+
+	public String get_Detalle() {
+		return _Detalle;
+	}
+
+	public void set_Detalle(String _Detalle) {
+		this._Detalle = _Detalle;
+	}
+
 	public String get_Informacion() {
 		return _Informacion;
 	}

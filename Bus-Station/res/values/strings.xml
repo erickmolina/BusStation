@@ -2,15 +2,29 @@
 <resources>
 
     <string name="app_name">Bus Station</string>
+   
+    <string name="str_ingr_ruta">Ingrese una ruta</string>
+    <string name="sin_conexi_n">Sin conexión</string>
+    <string name="intentar_nuevamente">Intentar nuevamente</string>
+    <string name="acercade">Instituto Tecnologico de Costa Rica
+        					Escuela de Ingenieria en Computacion
+        					Introduccion al Desarrollo de Aplicaciones Moviles
+        					Proyecto:Bus Station
+        					Estudiantes:
+        					Erick Molina
+        					Manfred Maroto
+        					Esteban Ureña </string>
+    
+    <!-- Action Bar action items -->
     <string name="item_hibrid">Hibrido</string>
     <string name="item_satelite">Satellite</string>
     <string name="item_normal">Normal</string>
     <string name="item_terran">Terrestre</string>
-    <string name="str_ingr_ruta">Ingrese una ruta</string>
-    <string name="sin_conexi_n">Sin conexión</string>
-    <string name="intentar_nuevamente">Intentar nuevamente</string>
-    <string name="nombre_ruta">Ruta</string>
-    <string name="tarifa">Tarifa</string>
-    <string name="str_mensaje"> Bienvenido a Bus Station para seleccionar una ruta, ingrese una o varias letras para obtener resultados </string>
-
+    
+    <string name="action_horarios">Horarios</string>
+    <string name = "action_rutas">Rutas</string>
+    <string name = "action_paradas">Paradas</string>
+    
+    <!-- Search  -->
+    <string name="search_hint">Filtrar Rutas...</string>
 </resources>
