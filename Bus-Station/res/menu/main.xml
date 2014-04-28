@@ -22,7 +22,7 @@
     <item android:id="@+id/action_ver_paradas"
           android:icon="@drawable/ic_action_direction"
           android:title="@string/action_paradas"
-          android:showAsAction="never" />
+          android:showAsAction="ifRoom" />
     
     
     <!-- Items para tipo de mapa -->

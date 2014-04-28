@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="#333333"
+    android:orientation="vertical"
+    android:padding="10dp" >
 
     <AutoCompleteTextView
         android:id="@+id/autoCompleteRutas"
@@ -14,6 +16,8 @@
         android:layout_marginTop="38dp"
         android:ems="10"
         android:hint="@string/search_hint"
+        android:textColorHint="#fed31f"
+        android:textColorLink="#fed31f"
         android:visibility="visible" >
 
         <requestFocus />
@@ -21,20 +25,25 @@
 
     <Button
         android:id="@+id/button1"
+ 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/autoCompleteRutas"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp"
+        android:background="#fed31f"
         android:text="Limpiar" />
 
     <ListView
         android:id="@+id/listView1"
+        style="@style/EstiloTexto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="13dp" >
+        android:layout_marginTop="13dp"
+        android:background="#dedede" >
+
     </ListView>
 
 </RelativeLayout>

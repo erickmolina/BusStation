@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import com.moviles.bus_station.R;
 import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -71,6 +72,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.OnNaviga
 		setContentView(R.layout.activity_main);
 		_opcion = 1;
 		_ActionBar = getActionBar();
+		
 		_ActionBar.setDisplayShowTitleEnabled(false);
 		_ActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 		_NavSpinner = new ArrayList<SpinnerNavItem>();
@@ -197,7 +199,9 @@ public class MainActivity extends FragmentActivity implements ActionBar.OnNaviga
 				startActivity(horarios);
 				return true;
 			case R.id.action_ver_paradas:
-				mostrarInformacionParadas();
+				if(_opcion!=1){
+					mostrarInformacionParadas();
+				}	
 				return true;
 			case R.id.action_hibrid:
 				_Map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
@@ -304,10 +308,12 @@ public class MainActivity extends FragmentActivity implements ActionBar.OnNaviga
         	List<Bus> unidades =  _Ruta.get_Unidades();
     		for(int cont = 0; cont<paradas.size();cont++){
     			Parada parada = paradas.get(cont);
+    			  
     			double latitude = Double.parseDouble(parada.get_Latitud());
     			double longitude = Double.parseDouble(parada.get_Longitud());
     			MarkerOptions marker = new MarkerOptions().position(new LatLng(latitude, longitude)).title(parada.get_Informacion());
-    			marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+    			marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.paradaico));
+    			marker.snippet("Ruta: "+paradas.get(cont).get_NombreRuta());
     			_Map.addMarker(marker);
     		}
     		for(int contu = 0; contu<unidades.size();contu++){
@@ -315,7 +321,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.OnNaviga
     			double latitude = Double.parseDouble(unidad.get_Latitud());
     			double longitude = Double.parseDouble(unidad.get_Longitud());
     			MarkerOptions marker = new MarkerOptions().position(new LatLng(latitude, longitude)).title("Estado: "+unidad.get_Estado());
-    			marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+    			marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.busico));
+    			marker.snippet("Ruta: "+unidades.get(contu).get_NombreRuta());
     			_Map.addMarker(marker);
     		}
         }
